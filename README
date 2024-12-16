@@ -1,0 +1,50 @@
+# NASA Battery Dataset Analysis
+
+# Dataset
+Source: [NASA Battery Dataset on Kaggle](https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset/data)
+
+# Dataset Characteristics
+- Contains Li-ion battery test data
+- Includes charge, discharge, and impedance measurements
+- Conducted at various temperatures
+- Tracks battery aging through electrochemical impedance spectroscopy (EIS)
+
+# Key Parameters
+- Re (Battery Impedance): Estimated electrolyte resistance
+- Rct (Charge Transfer Resistance): Estimated charge transfer resistance
+
+# Requirements
+- Python 3.7+
+- Required Libraries:
+  ```
+  pandas
+  plotly
+  ```
+
+# Installation
+
+1. Install required dependencies:
+   pip install pandas plotly
+
+## Usage
+Run the script to generate interactive visualizations:
+
+python battery_aging_analysis.py
+
+
+# Output
+The script generates three interactive HTML visualizations:
+1. `battery_impedance_vs_cycles.html`: Electrolyte Resistance over Cycles
+2. `charge_transfer_resistance_vs_cycles.html`: Charge Transfer Resistance over Cycles
+3. `combined_resistance_vs_cycles.html`: Combined Resistance Parameters
+
+# Analysis Approach
+1. Preprocess impedance measurement data
+2. Create cycle-based visualization
+3. Generate interactive Plotly charts
+4. Provide statistical summary
+
+# Visualization Details
+- X-axis: Cycle Number
+- Y-axis: Resistance (Ohms)
+- Interactive charts allow zooming and exploring data points
